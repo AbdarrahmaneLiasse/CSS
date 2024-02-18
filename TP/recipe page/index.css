@@ -1,0 +1,297 @@
+
+body{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:hsl(29, 53%, 90%) ;
+    padding: 10px 0px;
+}
+
+.container{
+    width:450px;
+    height: auto;
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+#img{
+    width: fit-content;
+    height: auto;
+}
+
+#img img{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+#desc{
+    opacity: 0.8;
+    font-size: 15px;
+}
+
+#preptime{
+    background-color: hsl(322, 100%, 98%);
+    font-size: small;
+    padding: 10PX;
+    border-radius: 5PX;
+}
+
+#preptime p{
+    font-size: medium;
+    color: hsl(334, 51%, 26%);
+    margin-left: 5px;
+    
+}
+
+#preptime li{
+padding: 5px;
+}
+
+#preptime li span{
+    font-weight: bold;
+    padding-right: 4px;
+}
+
+#ingredients{
+    font-size: small;
+    opacity:0.8 ;
+}
+
+#ingredients ul{
+    margin-left:-20px;
+}
+
+#ingredients p{
+    font-size: 25px;
+    color: hsl(16, 46%, 34%);
+    font-weight: bold;
+    margin-bottom: -3px;
+}
+
+#ingredients li{
+    padding: 5px;
+}
+
+hr{
+    margin: 20px 0px;
+    width: 100%;
+}
+
+#instructions{
+    font-size: small;
+    opacity:0.8 ;
+}
+
+#instructions p{
+    font-size: 25px;
+    color: hsl(16, 46%, 34%);
+    font-weight: bold;
+    margin-bottom: -3px;
+}
+
+#instructions ol{
+    margin-left:-24px;
+}
+
+#instructions li{
+    padding: 5px;
+}
+
+#instructions span{
+    font-weight: bold;
+}
+
+#nutritionTable #cal,#nutritionTable #carbs,#nutritionTable #protein,#nutritionTable #fat{
+    opacity: 0.8;
+    border-bottom: 0.1px solid;
+    border-color: hsl(0, 0%, 97%);
+    font-size: small;
+    padding: 10px;
+    padding-left: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+#nutritionTable p{
+    font-size: small;
+    margin:15px 0px;
+}
+
+#nutritionTable #title{
+    font-size: 25px;
+    color: hsl(16, 46%, 34%);
+    font-weight: bold;
+    margin-bottom: -3px;
+}
+
+#nutritionTable .w{
+   color: hsl(16, 46%, 34%);
+   font-weight: bold;width: 50%;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:500px)
+ {
+     body{
+        margin: 0;
+        width:auto;
+        height: auto;
+        }
+
+    .container{
+        width:auto;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: white;
+        border-radius: 0;
+        padding: 0;
+    }
+    
+
+    #img{
+        width: 100%;
+        height: auto;
+    }
+    
+    #img img{
+        border-radius: 0;
+    }
+   
+    
+    #desc{
+        opacity: 0.8;
+        font-size: 15px;
+        padding: 10px;
+    }
+    
+    #preptime{
+        background-color: hsl(322, 100%, 98%);
+        font-size: small;
+        padding: 10px;
+        border-radius: 5PX;
+    }
+    
+    #preptime p{
+        font-size: medium;
+        color: hsl(334, 51%, 26%);
+        margin-left: 5px;
+        
+    }
+    
+    #preptime li{
+    padding: 5px;
+    }
+    
+    #preptime li span{
+        font-weight: bold;
+        padding-right: 4px;
+        
+    }
+    
+    #ingredients{
+        font-size: small;
+        opacity:0.8 ;
+        padding: 10px;
+    }
+    
+    #ingredients ul{
+        margin-left:-20px;
+    }
+    
+    #ingredients p{
+        font-size: 25px;
+        color: hsl(16, 46%, 34%);
+        font-weight: bold;
+        margin-bottom: -3px;
+    }
+    
+    #ingredients li{
+        padding: 5px;
+    }
+    
+    hr{
+        
+        width: 100%;
+    }
+    
+    #instructions{
+        font-size: small;
+        opacity:0.8 ;
+        padding: 10px;
+    }
+    
+    #instructions p{
+        font-size: 25px;
+        color: hsl(16, 46%, 34%);
+        font-weight: bold;
+        margin-bottom: -3px;
+        
+    }
+    
+    #instructions ol{
+        margin-left:-24px;
+    }
+    
+    #instructions li{
+        padding: 5px;
+    }
+    
+    #instructions span{
+        font-weight: bold;
+    }
+    
+    #nutritionTable{
+        padding: 10px;
+
+    }
+
+    #nutritionTable #cal,#nutritionTable #carbs,#nutritionTable #protein,#nutritionTable #fat{
+        opacity: 0.8;
+        border-bottom: 0.1px solid;
+        border-color: hsl(0, 0%, 97%);
+        font-size: small;
+        padding: 10px;
+        padding-left: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        
+        
+    }
+    
+    #nutritionTable p{
+        font-size: small;
+        margin:15px 0px;
+    }
+    
+    #nutritionTable #title{
+        font-size: 25px;
+        color: hsl(16, 46%, 34%);
+        font-weight: bold;
+        margin-bottom: -3px;
+    }
+    
+    #nutritionTable .w{
+       color: hsl(16, 46%, 34%);
+       font-weight: bold;width: 50%;
+    }
+    
+}
