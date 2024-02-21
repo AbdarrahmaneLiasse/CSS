@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    background-color: hsl(233, 46%, 7%);
+}
+
+#container{
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    width: 740px;
+    height: fit-content;
+    background-color: hsl(246, 38%, 16%);
+}
+
+#infos{ 
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: auto;
+    padding: 30px;
+}
+
+#img{
+    width: 50%;
+}
+
+#img img{
+    width: 100%;
+    height: 100%;
+    filter: grayscale(100%)  sepia(50%) contrast(150%) brightness(0.5); 
+ }
+
+
+#infos h1,#infos p{
+    margin: 8px;
+    color:white ;
+}
+
+#infos p{
+    color: hsl(0, 5%, 72%);
+    font-size: small;
+}
+
+#infos h1 span{
+    color: hsl(275, 57%, 59%);
+}
+
+#infos #Stats{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 30px;
+    
+}
+
+#infos #Stats div{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    font-size: small;
+    color: hsl(0, 5%, 72%);
+    font-weight: 20;
+    
+}
+
+
+#infos #Stats div .numbers{
+    color:white ;
+    font-size: larger;
+    font-weight: 1000;
+}
+
+
+
+
+
+
+
+
+

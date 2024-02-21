@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container{
+    width: 700px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    
+    padding: 10px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;justify-content: space-evenly;
+
+    background-color: aqua;
+    padding: 30px;
+    
+}
+
+.card img{
+        width: 50px;
+}
+
+.card h1{
+    color: white;
+    margin: 15px 0px;
+}
+
+.card p{
+    font-size: small;
+    color: aliceblue;
+    opacity: 0.6;
+    margin: 5px 0px;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.card a{
+    text-decoration: none;
+    background-color: aliceblue;
+    width: fit-content;
+    padding: 6px 20px;
+    border-radius: 20px;
+    margin: 15px 0px;
+    
+}
+
+#first{
+    background-color: hsl(30, 77%, 52%);
+}
+#first a{  
+    color: hsl(30, 77%, 52%);
+}
+
+#second{
+    background-color:hsl(185, 98%, 23%) ;
+}
+#second a{
+    color: hsl(185, 98%, 23%); 
+}
+
+#third{
+    background-color:hsl(179, 100%, 13%) ;
+}
+#third a{
+    color: hsl(179, 100%, 13%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:500px) {
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    
+    #container{
+        margin: 0;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    
+    .card{
+        display: block;
+        padding: 40px ;
+        margin: 0;
+        
+    }
+    
+    .card img{
+            width: 50px;
+    }
+    
+    .card h1{
+        color: white;
+        margin: 15px 0px;
+    }
+    
+    .card p{
+        font-size: small;
+        color: aliceblue;
+        opacity: 0.6;
+        margin: 5px 0px;
+        margin-bottom: 40px;
+        width: 100%;
+    }
+    
+    .card a{
+        text-decoration: none;
+        background-color: aliceblue;
+        width: fit-content;
+        padding: 6px 20px;
+        border-radius: 20px;
+        margin: 15px 0px;
+        
+    }
+    
+    #first{
+        background-color: hsl(30, 77%, 52%);
+    }
+    #first a{  
+        color: hsl(30, 77%, 52%);
+    }
+    
+    #second{
+        background-color:hsl(185, 98%, 23%) ;
+    }
+    #second a{
+        color: hsl(185, 98%, 23%); 
+    }
+    
+    #third{
+        background-color:hsl(179, 100%, 13%) ;
+    }
+    #third a{
+        color: hsl(179, 100%, 13%);
+    }
+    
+    
+}
