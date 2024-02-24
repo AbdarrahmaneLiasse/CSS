@@ -1,0 +1,224 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 98%);
+}
+
+#container{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    flex-direction: column;
+}
+#tools-container{
+    width: 80%;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(4,auto);
+    align-items: center;
+    gap: 20px;
+    
+}
+
+#Supervisor{
+    grid-row:  1/8;
+    grid-column-start: 1;
+
+}
+#Calculator{
+    grid-row: 1/8;
+    grid-column-start: 3;
+    
+}
+#Karma{
+    grid-row: 5/8;
+}
+
+#Team{
+    grid-row: 1/5;
+}
+
+#desc{
+    font-size: x-large;color: rgb(17, 17, 17);
+    line-height: 30px;
+    text-align: center;width: 50%;
+}
+
+#desc span{
+    display: block;
+    font-weight: bold;
+}
+
+#desc p{
+    font-size: small;
+    color:hsl(240, 1%, 54%) ;
+    font-weight: bolder;
+    opacity: 0.8;
+    margin-top: 20px;
+    line-height: 18px;
+}
+
+#tools-container>div{
+    box-shadow: 5px 5px 20px hsl(240, 2%, 84%);
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    border-radius: 5px;
+}
+#Team{
+        border-top: 5px solid hsl(358, 31%, 47%);
+}
+#Karma{
+    border-top: 5px solid hsl(33, 87%, 55%);
+}
+#Calculator{
+    border-top: 5px solid hsl(212, 77%, 61%);
+}
+#Supervisor{
+    border-top: 5px solid hsl(179, 58%, 44%);
+}
+.title{
+    font-weight: bold;
+    font-size: large;
+    margin: 10px 0px; 
+}
+.description{
+    font-size: small;
+    color: gray;
+    opacity: 0.8;
+}
+.img{
+    margin: 20px 0px;
+    width: 100%;
+    height: fit-content;
+    text-align: end;
+    margin-bottom: 0px;
+}
+.img img{
+    width: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:500px) {
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    body{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: hsl(0, 0%, 98%);
+    }
+    
+    #container{
+        width: auto;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+        flex-direction: column;
+        margin: 35px 0px;
+
+    }
+    #tools-container{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+   
+    #desc{
+        width: auto;  
+        font-size: x-large;
+        margin-bottom: 30px;
+    }
+    #desc span{
+        display: block;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+    
+    #desc p{
+        width: 60%;
+        font-size: small;
+        color:hsl(240, 1%, 54%) ;
+        font-weight: bolder;
+        opacity: 0.8;
+        line-height: 18px;       
+        margin: auto;
+    }
+    
+    #tools-container>div{
+        box-shadow: 5px 5px 20px hsl(240, 2%, 84%);
+        background-color: hsl(0, 0%, 100%);
+        padding: 20px;
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        flex-direction: column;
+        border-radius: 5px;
+    }
+    #Team{
+            border-top: 5px solid hsl(358, 31%, 47%);
+    }
+    #Karma{
+        border-top: 5px solid hsl(33, 87%, 55%);
+    }
+    #Calculator{
+        border-top: 5px solid hsl(212, 77%, 61%);
+    }
+    #Supervisor{
+        border-top: 5px solid hsl(179, 58%, 44%);
+    }
+    .title{
+        font-weight: bold;
+        font-size: large;
+        margin: 10px 0px; 
+    }
+    .description{
+        font-size: small;
+        color: gray;
+        opacity: 0.8;
+    }
+    .img{
+        margin: 20px 0px;
+        width: 100%;
+        height: fit-content;
+        text-align: end;
+    }
+    .img img{
+        width: 50px;
+    }
+    
+    
+    
+       
+    
+}
