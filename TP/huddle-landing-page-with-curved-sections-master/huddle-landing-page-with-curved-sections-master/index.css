@@ -1,0 +1,558 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {width: 100vw; height: 100vh;}
+
+
+header{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+header a{
+    text-decoration: none;
+    padding:  5px 20px;
+    border: 0.8px solid hsl(321, 100%, 75%);
+    border-radius: 50px;
+    color: hsl(321, 100%, 75%);
+}
+header a:hover{
+    text-decoration: none;
+    padding:  5px 20px;
+    border-radius: 50px;
+    background-color: hsl(321, 100%, 75%);
+    color: hsl(0, 0%, 100%);
+}
+
+main{
+    min-width: 100vw;
+    height: auto;
+}
+
+main #presentation{
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+main #presentation h1{
+    width: 100%;
+    font-size: xxx-large;
+    text-align: center;
+}
+main #presentation p{
+    width: 60%;
+    font-weight: bold;
+    opacity: 0.7;
+    margin: 20px;
+    text-align: center;
+}
+main #presentation a{
+    text-align: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    width: fit-content;
+    font-size: small;
+    font-weight: bold;
+    padding:15px 50px ;
+    border-radius: 30px;
+    box-shadow: 4px 4px 9px;
+    margin-top: 15px;
+    margin-bottom: 80px;
+    background-color: hsl(321, 100%, 75%);
+}
+main #img{
+    width: 65%;
+    height: auto;
+    margin: auto;
+}
+main #img img{
+    width: 100%;
+}
+ 
+main #stats{
+    margin: auto;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+main #stats .stats{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+main #stats .stats img{
+    width: 25px;
+}
+main #stats .stats span{
+    font-size: xxx-large;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+main #stats .stats p{
+    color: rgb(90, 90, 90);
+    opacity: 0.7;
+    font-size: small;
+}
+
+main #sectionGrow,#sectionUsers{
+    background-color: hsl(207, 100%, 98%);
+}
+main #sectionGrow,#sectionUsers,#sectionconversation{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    padding: 70px;
+}
+main .img{
+    width: 40%;
+    margin: 30px;
+}
+main .img img{
+    width: 100%;
+}
+
+main .container{
+    width: 40%;
+    margin: 30px;
+}
+main .container h1{
+    margin: 15px 0px;
+    font-weight: bold;
+}
+main .container p{
+    font-weight: bold;
+}
+
+#AreUReady{
+    width: 100%;
+    text-align: center;
+    margin: 200px 0px;
+}
+main #AreUReady p{
+    font-size: x-large;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+main #AreUReady a{
+    text-decoration: none;
+    color: rgb(237, 237, 237);
+    font-size: small;
+    background-color: hsl(322, 98%, 66%);
+    padding: 10px 40px;
+    border-radius: 50px;
+}
+
+footer{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    padding: 30px 0px;
+    flex-direction: column;
+    background-color: hsl(192, 100%, 9%);
+    margin-top: -5px;
+}
+footer #container{
+    margin: auto;
+    width: 80%;
+    display: flex;
+    padding: 30px 0px;
+}
+footer #container #description{
+    width: 50%;
+}
+footer #container #description #huddle{
+    width: 35%;
+    font-size: xx-large;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+}
+
+footer #container #description p{
+    width: 60%;
+    color: white;
+    opacity: 0.7;
+    font-size: small;
+    margin:10px 0px ;
+}
+footer #container #description #phone{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+footer #container #description #phone #img{
+    width: 20px;
+    margin-right: 10px;
+}
+footer #container #description #phone img{
+    width: 100%;
+    height: auto;
+}
+
+footer #container #description #email{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+footer #container #description #email #img{
+    width: 20px;
+    margin-right: 10px;
+}
+footer #container #description #email img{
+    width: 100%;
+    height: auto;
+}
+
+
+footer #container #newsLetter{
+    width: 50%;
+}
+footer #container #newsLetter #title{
+    color: white;
+    font-size: x-large;
+}
+footer #container #newsLetter p{
+    width: 60%;
+    color: white;
+    opacity: 0.5;
+    font-size: small;
+    margin:15px 0px ;
+}
+footer #container #newsLetter #subscribe{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer #container #newsLetter #subscribe input{
+    width: 70%;
+    height: 28px;
+    border-radius: 4px;
+    padding-left: 4px;
+}
+footer #container #newsLetter #subscribe a{
+    text-decoration: none;
+    font-size: small;
+    color: white;
+    background-color: hsl(322, 98%, 66%);
+    padding:5px 20px ;
+}
+footer #logos{
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    margin: auto;
+}
+footer #logos i{
+    color: hsl(191, 96%, 10%);
+    margin: auto;   
+     border-radius: 5px;
+
+}
+footer #logos a{
+    width: fit-content;
+    margin-right:20px ;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:700px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body{
+        width: 100%;
+        min-height: 100vh;
+    }
+    
+    header{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px;
+    }
+    header div{
+        width: 120px;
+    }
+    header img{
+        width: 100%;
+    }
+
+    main{
+        width: 100%;
+        height: auto;
+    }
+    
+    main #presentation{
+        margin: auto;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+    }
+    
+    main #presentation h1{
+        width: 100%;
+        font-size: xx-large;
+        text-align: center;
+    }
+    main #presentation p{
+        width: 100%;
+        font-weight: bold;
+        opacity: 0.7;
+        text-align: center;
+    }
+    main #presentation a{
+        text-align: center;
+        text-decoration: none;
+        width: fit-content;
+        border-radius: 30px;
+        box-shadow: 4px 4px 9px;
+        margin: 30px 0px;
+    }
+    main #img{
+        width: 80%;
+        height: auto;
+        margin: 40px;
+    }
+    main #img img{
+        width: 100%;
+    }
+     
+    main #stats{
+        margin: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    main #stats div{
+        width: 30%;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+    main #stats .stats{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    main #stats .stats img{
+        width: 25px;
+    }
+    main #stats .stats span{
+        font-size: xxx-large;
+        font-weight: bold;
+        margin-bottom: 7px;
+    }
+    main #stats .stats p{
+        color: rgb(90, 90, 90);
+        opacity: 0.7;
+        font-size: small;
+    }
+    
+    main #sectionGrow,#sectionUsers{
+        background-color: hsl(207, 100%, 98%);
+    }
+    main #sectionGrow,#sectionUsers,#sectionconversation{
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(2,auto);
+        align-items: center;
+        justify-items: center;
+        row-gap: 40px;
+    }
+    main .img{
+        width: 80%;
+        grid-row-start: 1;
+    }
+    main .img img{
+        width: 100%;
+    }
+    
+    main .container{
+        width: 80%;
+        grid-row-start: 2;
+        text-align: center;
+    }
+    main .container h1{
+        font-weight: bold;
+    }
+    main .container p{
+        width: 100%;
+        font-weight: bold;
+        opacity: 0.7;
+    }
+    
+    #AreUReady{
+        width: 100%;
+        text-align: center;
+        margin: 100px 0px;
+    }
+    main #AreUReady p{
+        font-size: x-large;
+        font-weight: bold;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+    main #AreUReady a{
+        text-decoration: none;
+        color: rgb(237, 237, 237);
+        font-size: small;
+        background-color: hsl(322, 98%, 66%);
+        padding: 10px 40px;
+        border-radius: 50px;
+    }
+    
+    footer{
+        width: 100%;
+        height: auto;
+        display: flex;
+        padding: 30px 0px;
+        flex-direction: column;
+        margin: -8px 0px;
+        background-color: hsl(192, 100%, 9%);
+    }
+    
+    footer #container{
+        margin: auto;
+        width: 80%;
+        display: grid;
+        grid-template-rows: repeat(2,auto);
+        padding: 30px 0px;
+        gap: 40px;
+    }
+    footer #container #description{
+        width: 100%;       
+        grid-row: 2;
+        margin-bottom: 30px;
+    }
+    footer #container #description #huddle{
+        font-size: xx-large;
+        color: aliceblue;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+    }
+    footer #container #description #huddle img{
+        width: 30px;
+        margin-right: 8px;
+    }
+    
+    footer #container #description p{
+        width: 100%;
+        color: white;
+        opacity: 0.7;
+        font-size: small;
+        margin:10px 0px ;
+    }
+    footer #container #description #phone{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    footer #container #description #phone #img{
+        width: 20px;
+        margin-right: 10px;
+    }
+    footer #container #description #phone img{
+        width: 100%;
+        height: auto;
+    }
+    
+    footer #container #description #email{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    footer #container #description #email #img{
+        width: 20px;
+        margin-right: 10px;
+    }
+    footer #container #description #email img{
+        width: 100%;
+        height: auto;
+    }
+    
+    
+    footer #container #newsLetter{
+        width: 100%;
+        
+    }
+    footer #container #newsLetter #title{
+        color: white;
+        font-size: x-large;
+    }
+    footer #container #newsLetter p{
+        width: 100%;
+        color: white;
+        opacity: 0.5;
+        font-size: small;
+        margin:15px 0px ;
+    }
+    footer #container #newsLetter #subscribe{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: end;
+    }
+    footer #container #newsLetter #subscribe input{
+        width: 100%;
+        height: 28px;
+        border-radius: 4px;
+    }
+    footer #container #newsLetter #subscribe a{
+        text-decoration: none;
+        font-size: small;
+        color: white;
+        background-color: hsl(322, 98%, 66%);
+        padding:5px 30px ;
+        margin:20px 0px;
+    }
+    footer #logos{
+        width: 80%;
+        display: flex;
+        justify-content: flex-start;
+        margin: auto;
+    }
+    footer #logos i{
+        color: hsl(191, 96%, 10%);
+        margin: auto;   
+         border-radius: 5px;
+    
+    }
+    footer #logos a{
+        width: fit-content;
+        margin-right:20px ;
+    }
+    
+}
