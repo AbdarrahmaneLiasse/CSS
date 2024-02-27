@@ -1,0 +1,429 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: hsl(250, 75%, 98%);
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+header #logo{
+    width: 140px;
+}
+header #logo img{
+    width: 100%;
+}
+header #Headerlinks a{
+    text-decoration: none;
+    color: black;
+    opacity: 0.7;
+    margin: 0px 20px;
+}
+
+main{
+    width: 100vw;
+}
+main .sectionMain{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    margin-top: 150px ;
+}
+main .sectionMain #description{
+    width: 50%;
+}
+main .sectionMain #description p{
+    margin: 20px 0px;
+}
+main .sectionMain #description input{
+    height: 30px;
+    padding: 10px;
+    width: 50%;
+}
+main .sectionMain #description #email{
+    display: flex;
+    align-items: center;
+
+}
+main .sectionMain #description a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: small;
+    margin-left: 10px;
+    background-color: hsl(240, 88%, 63%);
+    padding:8px 30px ;
+}
+main .sectionMain #img{
+    width: 50%;
+}
+main .sectionMain #img img{
+    width: 100%;
+}
+
+main .sectionMain #presentation{
+    width: 50%;
+}
+
+main .sectionMain #presentation>p{
+    margin: 20px 0px;
+}
+
+main .sectionMain #presentation a{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    color: hsl(170, 45%, 43%);
+    text-decoration: none;
+    border-bottom:1px solid ;
+}
+main .sectionMain #presentation #quote{
+    width: 80%;
+    margin: 40px 0px;
+    padding: 20px;
+    background-color: white;
+}
+main .sectionMain #presentation #quote p{
+    opacity: 0.7;
+    margin: 10px 0px;
+}
+main .sectionMain #presentation #quote #Kyle{
+    width: fit-content;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+main .sectionMain #presentation #quote #Kyle #img{
+    width: 50px;
+    margin-right: 10px;
+}
+main .sectionMain #presentation #quote #Kyle #img img{
+    width: 100%;
+    border-radius: 50%;
+}
+main .sectionMain #presentation #quote #Kyle span{
+    display: block;
+    opacity: 0.7;
+    font-size: small;
+}
+main #Access{
+    width: 100%;
+    display: flex;
+    padding:50px 90px;
+    background-color:hsl(238, 22%, 44%) ;
+    color: white;
+    margin: auto;
+    margin-top: 70px;
+}
+main #Access #desc{
+    width: 50%;
+    margin: 10px;
+}
+main #Access #desc p{
+    opacity: 0.6;
+    margin-top: 10px;
+    width: 80%;
+}
+main #Getstarted{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    margin-left: 20px;
+}
+main #Getstarted input{
+    height: 40px;
+    width: 90%;
+}
+main #Getstarted a{
+    width: fit-content;
+    color: white;
+    text-decoration: none;
+    font-size: small;
+    background-color:hsl(240, 88%, 63%) ;
+    margin:20px 0px ;
+    padding:  10px 20px;
+}
+
+footer{
+    width: 100vw;
+    background-color:hsl(243, 87%, 12%) ;
+    color: white;
+    padding: 90px ;
+}
+footer #img{
+    width: fit-content;
+}
+
+footer #containerFooter{
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: repeat(4,auto);
+    opacity: 0.7;
+}
+footer #containerFooter #contacts{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+footer #containerFooter #contacts div{
+    margin: 5px 0px;
+}
+footer #containerFooter #contacts img{
+    width: fit-content;
+    float: left;
+}
+footer .links{
+    display: flex;
+    flex-direction: column;
+    line-height: 28px;
+}
+footer .links a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:700px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body{
+        width: 100vw;
+        min-height: 100vh;
+        background-color: hsl(250, 75%, 98%);
+    }
+    
+    header{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 20px;
+    }
+    header #logo{
+        width: 140px;
+    }
+    header #logo img{
+        width: 100%;
+    }
+    header #Headerlinks a{
+        text-decoration: none;
+        color: black;
+        opacity: 0.7;
+        margin: 4px ;
+    }
+    
+    main{
+        width: 100vw;
+    }
+    main .sectionMain{
+        width: 80%;
+        margin: auto;
+        display: grid;
+        margin-top: 150px ;
+        grid-template-rows: repeat(2,auto);
+    }
+    main .sectionMain #description{
+        grid-row-start: 2;
+        width: 100%;
+        text-align: center;
+    }
+    main .sectionMain #description p{
+        margin: 30px 0px;
+    }
+    main .sectionMain #description input{
+        height: 40px;
+        padding: 10px;
+        width: 100%;
+        font-size: medium;
+    }
+    main .sectionMain #description #email{
+       display: flex;
+       flex-direction: column;
+    }
+    main .sectionMain #description a{
+        text-decoration: none;
+        color: aliceblue;
+        font-size: medium;
+        margin:20px 0px;
+        width: 100% ;
+        background-color: hsl(240, 88%, 63%);
+        text-align: center;
+        height: 40px;
+    }
+    main .sectionMain #img{
+        grid-row-start: 1;
+        margin-top: -10px;
+        width: 100%;
+    }
+    main .sectionMain #img img{
+        width: 100%;
+    }
+    
+    main .sectionMain #presentation{
+        width: 100%;
+    }
+    main .sectionMain #presentation h1{
+        text-align: center;
+    }
+    main .sectionMain #presentation>p{
+        margin: 20px 0px;
+        text-align: center;
+    }
+    
+    main .sectionMain #presentation a{
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        color: hsl(170, 45%, 43%);
+        text-decoration: none;
+        border-bottom:1px solid ;
+        margin: auto;
+    }
+    main .sectionMain #presentation #quote{
+        width: 100%;
+        margin: 40px 0px;
+        padding: 20px;
+        background-color: white;
+    }
+    main .sectionMain #presentation #quote p{
+        opacity: 0.7;
+        text-align: start;
+        margin: 20px 0px;
+    }
+    main .sectionMain #presentation #quote #Kyle{
+        width: fit-content;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    
+    }
+    main .sectionMain #presentation #quote #Kyle #img{
+        width: 50px;
+        margin-right: 10px;
+    }
+    main .sectionMain #presentation #quote #Kyle #img img{
+        width: 100%;
+        border-radius: 50%;
+    }
+    main .sectionMain #presentation #quote #Kyle span{
+        display: block;
+        opacity: 0.7;
+        font-size: x-small;
+        
+    }
+    main #Access{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color:hsl(238, 22%, 44%) ;
+        color: white;
+        padding: 35px 0px;
+        margin-top: 70px;
+        text-align: center;
+    }
+    main #Access #desc{
+        width: 80%;
+        margin: auto;
+    }
+
+    main #Access #desc h1{
+        width: 100%;
+    }
+
+    main #Access #desc p{
+        opacity: 0.6;
+        margin-top: 10px;
+        width: 100%;
+    }
+    main #Getstarted{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        margin-top: 20px;
+
+    }
+    main #Getstarted input{
+        height: 40px;
+        width: 70%;
+        margin: auto;
+    }
+    main #Getstarted a{
+        width: 70%;
+        color: white;
+        text-decoration: none;
+        font-size: medium;
+        background-color:hsl(240, 88%, 63%) ;
+        margin: auto;
+        margin-top: 15px;
+        
+        padding: 15px 40px;
+    }
+    
+    footer{
+        width: 100vw;
+        background-color:hsl(243, 87%, 12%) ;
+        color: white;
+        padding: 60px 40px ;
+    }
+    footer #img img{
+        width: 200px;
+    }
+    
+    footer #containerFooter{
+        display: flex;
+        margin-top: 20px;
+        flex-direction: column;
+        opacity: 0.7;
+        font-size: medium;
+    }
+    footer #containerFooter #contacts{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    footer #containerFooter #contacts div{
+        margin: 5px 0px;
+    }
+    footer #containerFooter #contacts img{
+        width: fit-content;
+        float: left;
+        margin-right: 20px;
+    }
+    footer .links{
+        display: flex;
+        flex-direction: column;
+        line-height: 28px;
+        margin-bottom: 30px;
+    }
+    footer .links a{
+        text-decoration: none;
+        color: white;
+    }
+    
+       
+    
+}
