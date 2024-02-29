@@ -1,0 +1,467 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+header{
+    width: 100vw;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: url(images/bg-header-desktop.png) no-repeat;
+    background-size: contain;
+    padding: 80px 0px;
+}
+header h1{
+    margin-bottom: 20px;
+    font-size: xxx-large;
+}
+header p{
+    margin-bottom: 30px ;
+    opacity: 0.7;
+    width: 40%;
+    text-align: center;
+}
+header #buttons{
+    display: flex;
+    width: fit-content;
+}
+header #buttons a{
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: small;
+}
+header #buttons #ios{
+    background-color: hsl(171, 53%, 58%);
+    box-shadow: 0px 3px 3px hsl(171, 53%, 58%);
+    margin-right: 20px;
+}
+header #buttons #mac{
+    background-color: hsl(232, 100%, 76%);
+    box-shadow: 0px 3px 3px hsl(232, 100%, 76%);
+}
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+main .desc{
+    width: 100vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 70px;
+}
+main .desc h2{
+    margin: 20px 0px;
+}
+main .desc p{
+    width: 50%;
+    opacity: 0.7;
+    line-height: 20px;
+}
+main #container1{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;margin: 100px 0px;
+}
+main #container1 #img{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    
+}
+main  #container1 #img img{
+    width: 100%;
+    margin-left: -30px;
+}
+main #container1 #desc{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+main #container1 #desc p{
+    width: fit-content;
+    width: 70%;
+    opacity: 0.7;
+}
+main #container1 #desc .title{
+    font-weight: bold;
+    margin: 10px 0px;
+}
+#CompHistory,#icloudSync,#QuickSearch{
+    padding: 50px;
+}
+main #access{
+    width: 100vw;
+}
+main #access #img{
+    width: 60%;
+    margin: auto;
+}
+main #access #img img{
+    width: 100%;
+}
+main #container2{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    margin-bottom: 30px;
+}
+main #container2 .tools{
+    margin: auto;
+     width: 30%;
+    text-align: center;
+}
+main #container2 .tools img{
+    width: 40px;
+}
+main #container2 .tools h2{
+    margin: 15px 0px;
+}
+main #container2 .tools p{
+    opacity: 0.7;
+    width: 70%;
+    margin: auto;
+}
+main #BigFirms{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main #BigFirms img{
+    width: 110px;
+    width: fit-content;
+}
+main #MainEnd{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 200px 0px;
+}
+main #MainEnd h2{
+    margin-bottom: 20px;
+    font-size: xx-large;
+}
+main #MainEnd p{
+    margin-bottom: 30px ;
+    opacity: 0.7;
+    width: 40%;
+    text-align: center;
+}
+main #MainEnd #buttons{
+    display: flex;
+    width: fit-content;
+}
+main #MainEnd #buttons a{
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: small;
+}
+main #MainEnd #buttons #ios{
+    background-color: hsl(171, 53%, 58%);
+    box-shadow: 0px 3px 3px hsl(171, 53%, 58%);
+    margin-right: 20px;
+}
+main #MainEnd #buttons #mac{
+    background-color: hsl(232, 100%, 76%);
+    box-shadow: 0px 3px 3px hsl(232, 100%, 76%);
+}
+
+footer{
+    display: flex;
+    align-items: center ;
+    padding: 30px 100px;
+    background-color:hsl(220, 18%, 97%) ;
+    justify-content: space-around;
+    width: 100%;
+    
+}
+footer #img{
+    width: 50px;
+}
+footer #img img{
+    width: 100%;
+}
+footer #grid-container{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    column-gap: 100px;
+    opacity: 0.7;
+ }
+
+#contacts{
+    grid-column-start: 1;
+}
+#privacy{
+    grid-row-start: 1;
+    grid-column-start: 2;
+}
+#Installguide{
+    grid-row-start: 1;
+    grid-column-start:3 ;
+}
+
+#icons img{
+    margin-left: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:900px) {
+    *{
+        box-sizing: border-box;
+        margin:0;
+        padding: 0;
+    }
+    
+    header{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: url(images/bg-header-desktop.png) no-repeat;
+        background-size: contain;
+        padding: 80px 0px;
+    }
+    header h1{
+        margin: 20px 0px;
+        font-size: x-large;
+    }
+    header p{
+        margin-bottom: 30px ;
+        opacity: 0.7;
+        width: 80%;
+        text-align: center;
+    }
+    header #buttons{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+    header #buttons a{
+        text-align: center;
+        width: 100%;
+        padding: 10px 30px;
+        color: white;
+        text-decoration: none;
+        border-radius: 50px;
+        font-size: medium;
+    }
+    header #buttons #ios{
+        background-color: hsl(171, 53%, 58%);
+        box-shadow: 0px 3px 3px hsl(171, 53%, 58%);
+        margin-bottom: 20px;
+    }
+    header #buttons #mac{
+        background-color: hsl(232, 100%, 76%);
+        box-shadow: 0px 3px 3px hsl(232, 100%, 76%);
+    }
+    
+    main{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    main .desc{
+        width: 100vw;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 70px;
+    }
+    main .desc h2{
+        margin: 20px 0px;
+    }
+    main .desc p{
+        width: 80%;
+        opacity: 0.7;
+        line-height: 20px;
+    }
+    main #container1{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 50px 0px;
+        text-align: center;
+    }
+    main #container1 #img{    
+        margin: auto;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        
+    }
+    main  #container1 #img img{
+        width: 100%;
+        margin-left: 0px;
+    }
+    main #container1 #desc{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    main #container1 #desc p{
+        width: fit-content;
+        width: 100%;
+        opacity: 0.7;
+    }
+    main #container1 #desc .title{
+        font-weight: bold;
+        margin: 10px 0px;
+    }
+    #CompHistory,#icloudSync,#QuickSearch{
+        padding: 30px;
+    }
+    main #access{
+        width: 100vw;
+    }
+    main #access #img{
+        width: 80%;
+        margin: auto;
+    }
+    main #access #img img{
+        width: 100%;
+    }
+    main #container2{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    main #container2 .tools{
+        margin: auto;
+         width: 100%;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    main #container2 .tools img{
+        width: 40px;
+    }
+    main #container2 .tools h2{
+        margin: 15px 0px;
+    }
+    main #container2 .tools p{
+        opacity: 0.7;
+        width: 80%;
+        margin: auto;
+    }
+    main #BigFirms{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    main #BigFirms img{
+        width: 110px;
+        width: fit-content;
+        margin-bottom: 40px;
+    }
+    main #MainEnd{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 100px 0px;
+    }
+    main #MainEnd h2{
+        width: 90%;
+        margin-bottom: 20px;
+        font-size: xx-large;
+        text-align: center;
+    }
+    main #MainEnd p{
+        margin-bottom: 30px ;
+        opacity: 0.7;
+        width: 95%;
+        text-align: center;
+    }
+    main #MainEnd #buttons{
+        display: flex;
+        flex-direction: column;
+        width:90%;
+    }
+    main #MainEnd #buttons a{
+        padding: 10px 30px;
+        color: white;
+        text-decoration: none;
+        border-radius: 50px;
+        font-size: medium;
+        text-align: center;
+    }
+    main #MainEnd #buttons #ios{
+        background-color: hsl(171, 53%, 58%);
+        box-shadow: 0px 3px 3px hsl(171, 53%, 58%);
+        margin: 10px 0px;
+        width: 100%;
+    }
+    main #MainEnd #buttons #mac{
+        background-color: hsl(232, 100%, 76%);
+        box-shadow: 0px 3px 3px hsl(232, 100%, 76%);
+    }
+    
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center ;
+        padding: 30px 100px;
+        background-color:hsl(220, 18%, 97%) ;
+        justify-content: space-between;
+        width: 100%;
+        
+    }
+    footer #img{
+        width: 50px;
+        margin-bottom: 40px;
+    }
+    footer #img img{
+        width: 100%;
+    }
+    footer #grid-container{
+        margin-bottom: 40px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        column-gap: 100px;
+        opacity: 0.7;
+     }
+     footer #grid-container div{
+        font-size: large;
+        margin-bottom: 20px;
+     }
+   
+    #icons img{
+        margin-left: 15px;
+    }
+       
+}
